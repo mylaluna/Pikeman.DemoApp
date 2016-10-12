@@ -9,24 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var platform_browser_1 = require('@angular/platform-browser');
-var demo_component_1 = require('./demo.component');
-var app_component_1 = require('./app.component');
-var AppModule = (function () {
-    function AppModule() {
+var DemoComponent = (function () {
+    function DemoComponent() {
     }
-    AppModule = __decorate([
-        core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule],
-            declarations: [
-                app_component_1.AppComponent,
-                demo_component_1.DemoComponent
-            ],
-            bootstrap: [app_component_1.AppComponent]
+    DemoComponent = __decorate([
+        core_1.Component({
+            selector: 'pikeman-demo',
+            templateUrl: 'app/demo.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppModule);
-    return AppModule;
+    ], DemoComponent);
+    return DemoComponent;
 }());
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+exports.DemoComponent = DemoComponent;
+//# sourceMappingURL=demo.component.js.map
